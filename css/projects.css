@@ -1,0 +1,86 @@
+
+#projects{
+    text-align: center;
+    
+}
+.project-container{
+    justify-content: center;
+    align-items: center;
+    
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    padding: 20px;
+    
+}
+.project-box{
+    height: auto;
+    background-color: rgba(0, 62, 5, 0.673); 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    box-shadow: 2px 5px 10px white;
+    
+}
+.review-text{
+    height: 200px;
+    background-color: white;
+    margin: 0 10px;
+    border-radius: 20px;
+    padding: 5px;
+    overflow-y: scroll; /* make the content scrollable if it 's too long for the given height */
+
+}
+.review-text h4{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.review-text p{
+    text-align: start;
+}
+
+.profile-image{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px white;
+}
+.project-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 5px;
+}
+.review-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rating{
+    margin-left: 3vw;
+    text-shadow: 2px 2px 2px gray;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 860px) {
+    .project-container{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .project-container{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+}
