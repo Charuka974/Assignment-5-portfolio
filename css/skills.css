@@ -16,15 +16,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 2px 5px 10px white;
+        background: #000000;
+        color: white;
+    }
 }
 
 
-.skill:hover {
-    background: #000000;
-    color: white;
-    transform: scale(1.05);
+.skill:hover { 
     cursor: pointer;
-    box-shadow: 2px 5px 10px white;
+    animation: loading 1s forwards ease-in-out;
 }
 
 

@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
 
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-        crossorigin="anonymous"
-    >
-
-    <link rel="icon" href="/assets/images/page logo.png" />
     <link rel="stylesheet" href="/css/navigation-styles.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/page-styles.css">
@@ -25,38 +17,51 @@
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/contact.css">
 
+    <link rel="icon" href="/assets/images/page logo.png" />
+
     
 </head>
 <body>
     <div class="box" id="box-top"></div>
     <div class="box" id="box-bottom"></div>
 
-
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img id="nav-logo" src="/assets/images/page logo.png" alt="logo"></a>
+        <div class="logo-container">
+        <a class="logo-btn" href="#home"><img class="logo" src="/assets/images/page logo.png" alt="logo" /></a>
+          
+        </div>
+        <nav class="navigation">
+          <ul class="nav-links">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#assignments">Assignments</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <img class="burger-btn" id="burger" aria-hidden="true" src="/assets/images/menu_circular_button_burger_icon_124214.png" alt="burger-button">
+        <nav class="menu-panel" id="menu-panel-id">
+        
+        <img class="close-btn" id="btn-close" aria-hidden="true" src="/assets/images/cancel_button_close_delete_icon_124197.png" alt="close-button">
+          
+          <ul>
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#assignments">Assignments</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#assignments">Assignments</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+      
 
-            </div>
-          </nav>
-    </header>
 
     <section id="home">
         <div class="hero">
@@ -68,7 +73,7 @@
                     <img src="/assets/images/WhatsApp_Image_2025-01-11_at_06.06.49_1f1ce721-removebg-preview.png" alt="Charuka Hansaja">
                 </div>
                 <div class="hero-details">
-                    <p>Software Developer Student</p>
+                    <h2>Software Engineer</h2>
                     <p>I'm a Sri Lanka-based full-stack developer focused on creating great and user-friendly experiences. I'm passionate about building great software that improves the lives of those around me.</p>
                     <a href="#about" class="btn">About me</a>
                     <a href="#" class="btn">Download Resume</a>
@@ -91,6 +96,8 @@
         </footer>
 
     </section>
+
+    
     
     
 
@@ -112,15 +119,21 @@
                     <p>
                         Tic-Tac-Toe game using Java and JavaFX, incorporating the Minimax algorithm for an unbeatable AI opponent. The project follows Object-Oriented Programming (OOP) principles, ensuring clean, modular, and scalable code.<br>
                         <br>
+                        <div class="project-ing-container">
+                            <img class="project-image" src="/assets/images/Screenshot tic tac toe.png">
+                        </div>
+                        <br>
                         Key Features:<br>
-                        ✔ Interactive UI – Built with JavaFX for a smooth and responsive gaming experience.<br>
-                        ✔ AI Opponent (Minimax Algorithm) – The AI strategically evaluates moves to make optimal decisions, making it challenging for players.<br>
-                        ✔ Player vs Player & Player vs AI Modes – Choose between playing with a friend or competing against the AI.<br>
-                        ✔ Efficient Game Logic – Implements OOP principles like encapsulation, inheritance, and polymorphism for maintainability.<br>
-                        ✔ Dynamic UI Updates – Real-time game status updates with intuitive feedback.<br>
+                        &nbsp;⚫ Interactive UI – Built with JavaFX for a smooth and responsive gaming experience.<br>
+                        &nbsp;⚫ AI Opponent (Minimax Algorithm) – The AI strategically evaluates moves to make optimal decisions, making it challenging for players.<br>
+                        &nbsp;⚫ Player vs Player & Player vs AI Modes – Choose between playing with a friend or competing against the AI.<br>
+                        &nbsp;⚫ Efficient Game Logic – Implements OOP principles like encapsulation, inheritance, and polymorphism for maintainability.<br>
+                        &nbsp;⚫ Dynamic UI Updates – Real-time game status updates with intuitive feedback.<br>
                         <br>
                         This project showcases my algorithmic problem-solving skills, understanding of AI techniques, and ability to build interactive desktop applications using JavaFX.                    
                     </p>
+                        <a target="_blank" class="project-link" href="https://github.com/Charuka974/Tic-Tac-Toe-Game.git">Tic Tac Toe</a>
+
                 </div>
         
             </div>
@@ -138,18 +151,23 @@
                     <p>
                         Gourmet Delight, a robust restaurant management system using Java, JavaFX, SQL, and Maven, following the MVC architecture and Object-Oriented Programming (OOP) principles.<br>
                         <br>
+                        <div class="project-ing-container">
+                            <img class="project-image" src="/assets/images/Screenshot 2024-11-24 213545.png">
+                        </div>
+                        <br>
                         Key Features:<br>
-                        ✔ Comprehensive Order Management – Handles customer orders efficiently with real-time updates.<br>
-                        ✔ Stock & Inventory Control – Tracks ingredient stock levels, preventing shortages and optimizing supply chain management.<br>
-                        ✔ Employee Management – Manages staff details, schedules, and roles with an intuitive interface.<br>
-                        ✔ Customer Database – Stores customer information, enabling loyalty programs and personalized service.<br>
-                        ✔ User-Friendly & Eye-Catching UI – Built with JavaFX, ensuring a visually appealing and seamless user experience.<br>
-                        ✔ Robust Data Handling – Integrated with SQL for efficient data storage and retrieval.<br>
-                        ✔ Scalable & Maintainable – Developed using Maven and MVC architecture, ensuring modularity and ease of maintenance.<br>
+                        &nbsp;⚫ Comprehensive Order Management – Handles customer orders efficiently with real-time updates.<br>
+                        &nbsp;⚫ Stock & Inventory Control – Tracks ingredient stock levels, preventing shortages and optimizing supply chain management.<br>
+                        &nbsp;⚫ Employee Management – Manages staff details, schedules, and roles with an intuitive interface.<br>
+                        &nbsp;⚫ Customer Database – Stores customer information, enabling loyalty programs and personalized service.<br>
+                        &nbsp;⚫ User-Friendly & Eye-Catching UI – Built with JavaFX, ensuring a visually appealing and seamless user experience.<br>
+                        &nbsp;⚫ Robust Data Handling – Integrated with SQL for efficient data storage and retrieval.<br>
+                        &nbsp;⚫ Scalable & Maintainable – Developed using Maven and MVC architecture, ensuring modularity and ease of maintenance.<br>
                         <br>
                         This project highlights my expertise in full-stack Java development, database integration, and building efficient business solutions with structured software design patterns.                
                     </p>
-                    
+                        <a target="_blank" class="project-link" href="https://github.com/Charuka974/Restaurant-Management-System.git">RMS (MVC)</a>
+                        
                 </div>
         
             </div>
@@ -167,18 +185,23 @@
                     <p>
                         Gourmet Delight, a robust and scalable restaurant management system using Java, JavaFX, SQL, and Maven, designed with a Layered Architecture to ensure clear separation of concerns, maintainability, and scalability.<br>
                         <br>
+                        <div class="project-ing-container">
+                            <img class="project-image" src="/assets/images/Screenshot 2024-11-19 192539.png">
+                        </div>
+                        <br>
                         Key Features:<br>
-                        ✔ Layered Architecture Implementation – Organized into Presentation, Business Logic, and Data Access layers, enhancing modularity and code maintainability.<br>
-                        ✔ Order Management System – Processes customer orders efficiently with real-time updates.<br>
-                        ✔ Stock & Inventory Management – Tracks ingredient levels and prevents shortages with automated stock control.<br>
-                        ✔ Employee & Customer Management – Maintains detailed records of staff, roles, schedules, and customer data.<br>
-                        ✔ Intuitive & Eye-Catching UI – Built with JavaFX, providing a seamless and visually engaging user experience.<br>
-                        ✔ Secure & Efficient Database Integration – Uses SQL for structured data management and transaction handling.<br>
-                        ✔ Scalability & Maintainability – Leveraging Maven for dependency management and structured software design.<br>
+                        &nbsp;⚫ Layered Architecture Implementation – Organized into Presentation, Business Logic, and Data Access layers, enhancing modularity and code maintainability.<br>
+                        &nbsp;⚫ Order Management System – Processes customer orders efficiently with real-time updates.<br>
+                        &nbsp;⚫ Stock & Inventory Management – Tracks ingredient levels and prevents shortages with automated stock control.<br>
+                        &nbsp;⚫ Employee & Customer Management – Maintains detailed records of staff, roles, schedules, and customer data.<br>
+                        &nbsp;⚫ Intuitive & Eye-Catching UI – Built with JavaFX, providing a seamless and visually engaging user experience.<br>
+                        &nbsp;⚫ Secure & Efficient Database Integration – Uses SQL for structured data management and transaction handling.<br>
+                        &nbsp;⚫ Scalability & Maintainability – Leveraging Maven for dependency management and structured software design.<br>
                         <br>
                         By following Layered Architecture principles, this system ensures flexibility, scalability, and ease of future enhancements, making it a powerful solution for restaurant management.                    
                     </p>
-                    
+                        <a target="_blank" class="project-link" href="https://github.com/Charuka974/RMS-Layered-Architecture-Project.git">RMS (Layered)</a>
+
                 </div>
         
             </div>
@@ -196,38 +219,30 @@
                     <p>
                         Recipix, a visually appealing and user-friendly recipe website using HTML and CSS, designed to provide a seamless browsing experience for food enthusiasts.<br>
                         <br>
+                        <div class="project-ing-container">
+                            <img class="project-image" src="/assets/images/Screenshot Recipix.png">
+                        </div>
+                        <br>
                         Key Features:<br>
-                        ✔ Clean & Responsive Design – Ensures a smooth experience across all devices with a mobile-friendly layout.<br>
-                        ✔ Beautiful Recipe Showcase – Displays recipes with high-quality images, ingredients, and step-by-step instructions.<br>
-                        ✔ Category-Based Navigation – Easily browse through different cuisines, meal types, and dietary preferences.<br>
-                        ✔ Modern & Eye-Catching UI – Styled with CSS animations and transitions for an engaging user experience.<br>
-                        ✔ Fast & Lightweight – Optimized for performance and quick load times.<br>
+                        &nbsp;⚫ Clean & Responsive Design – Ensures a smooth experience across all devices with a mobile-friendly layout.<br>
+                        &nbsp;⚫ Beautiful Recipe Showcase – Displays recipes with high-quality images, ingredients, and step-by-step instructions.<br>
+                        &nbsp;⚫ Category-Based Navigation – Easily browse through different cuisines, meal types, and dietary preferences.<br>
+                        &nbsp;⚫ Modern & Eye-Catching UI – Styled with CSS animations and transitions for an engaging user experience.<br>
+                        &nbsp;⚫ Fast & Lightweight – Optimized for performance and quick load times.<br>
                         <br>
                         This project showcases my front-end development skills, focusing on UI/UX design, responsiveness, and structured web layouts.
                   
                     </p>
+                        <a target="_blank" class="project-link" href="https://github.com/Charuka974/Recipix-Recipes.git">Recipix Recipes github</a>
+                        <br>
+                        <br>
+                        <a target="_blank" class="project-link" href="https://recipix-recipes.web.app/">Recipix Recipes</a>
+
                 </div>
         
             </div>
    
    
-            <!-- <div class="project-box">
-   
-               <div class="review-header">
-                <div class="project-header">
-                   <img class="profile-image" src="/assets/images/page logo.png" alt="">
-                   <p class="name">Charuka Hansaja</p>
-                </div>
-                <span class="rating">⭐⭐⭐⭐⭐⭐</span>
-               </div>
-        
-                <div class="review-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione corporis error. Non, minima. Reprehenderit asperiores voluptatum nisi in exercitationem.
-                    </p>
-                </div>
-        
-            </div> -->
    
        </div>
 
@@ -294,10 +309,10 @@
                 <img src="/assets/images/WhatsApp Image 2025-02-12 at 17.42.05_a8ec3347.jpg" alt="Gallery Image 1">
             </div>
             <div class="gallery-item">
-                <img src="/assets/images/Screenshot 2024-11-19 192539.png" alt="Gallery Image 2">
+                <img src="/assets/images/Gourmet Delight.png" alt="Gallery Image 2">
             </div>
             <div class="gallery-item">
-                <img src="/assets/images/Screenshot 2024-11-24 213545.png" alt="Gallery Image 3">
+                <img src="/assets/images/Screenshot 2024-11-19 192539.png" alt="Gallery Image 2">
             </div>
         </div>
 
@@ -360,10 +375,18 @@
     </footer>
 
 
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-        crossorigin="anonymous">
+    <script>
+        const burger = document.getElementById("burger");
+        const menuPanel = document.getElementById("menu-panel-id");
+        const closeBtn = document.getElementById("btn-close");
+  
+        burger.addEventListener("click", () => {
+          menuPanel.classList.add("active");
+        });
+  
+        closeBtn.addEventListener("click", () => {
+          menuPanel.classList.remove("active");
+        });
     </script>
 
 </body>

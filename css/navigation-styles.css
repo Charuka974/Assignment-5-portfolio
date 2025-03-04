@@ -1,73 +1,114 @@
-
-.navbar {
-    width: 100vw;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 20px;
-    position: fixed;
+body {
+    margin: 0;
 }
+header {
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
 
-#nav-logo{
-    height: 40px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
     width: 40px;
+    height: 40px;
     border-radius: 50%;
-    transition: transform 0.3s ease-in-out;
+    margin-right: 12px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 2px;
+    padding-right: 40px;
+}
+.nav-links li {
+    margin-right: 16px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    padding: 2px;
     
 }
+.nav-links li a:hover {
+    color: white;
+    background-color: rgb(0, 62, 5);
+}
 
-.navbar-toggler{
-    width: 40px;
+.menu-panel {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    right: -100%;
+    transition: right 0.5s ease-in-out;
+}
+.menu-panel ul {
+    list-style: none;
+    padding-top: 15vh;
+    
+}
+.menu-panel ul li {
+    margin-bottom: 16px;
+}
+.menu-panel ul li a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+.menu-panel ul li a:hover {
+    color: white;
+}
+    
+.burger-btn{
+      height: 40px;
+      width: 40px;
+      background-color: white;
+      border-radius: 50%;
+      margin-right: 12px;
+      cursor: pointer;
+      display: none;
+}
+.close-btn {
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 40px;
     border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    
+
 }
-
-.navbar-toggler-icon {
-    transform: scale(1.5);
-}
-
-.nav-link {
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.nav-link:hover {
-    transform: scale(1.1);
-}
-
-
-@media screen and (min-width: 992px){
-    .nav-link {
-        border-radius: 20px;
+@media screen and (max-width: 768px) {
+    #burger {
+      display: block;
     }
-    .nav-link:hover {
-        background-color: rgba(0, 62, 5, 0.673);
-        border-radius: 20px;
-        color: white;
-        transform: scale(1.1);
+    .navigation {
+      display: none;
     }
+    .logo-container > h3 {
+      display: none;
+    }
+    .menu-panel.active {
+      right: 0;
+    }
+    .menu-panel ul li a:hover {
+        background-color: white;
+        color: black;
+     }
 }
-
-
-
-@media screen and (max-width: 992px) {
-    .navbar-nav {
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100%;
-    }
-
-    .nav-link{
-        width: 200px;
-        background-color: rgba(0, 62, 5, 0.673);
-        display: flex;
-        justify-content: center;
-        margin: 2px;
-        border-radius: 15px;
-        color: white;
-    }
-
-}
-
-
