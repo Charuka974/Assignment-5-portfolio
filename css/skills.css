@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+#skills{
+    width: 100%;
+}
 
 
 .skill {

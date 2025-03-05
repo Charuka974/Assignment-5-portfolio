@@ -1,9 +1,7 @@
-body {
-    margin: 0;
-}
 header {
-    width: 100vw;
+    width: 100%;
     position: fixed;
+    top: 0;
     background-color: white;
     color: black;
     display: flex;
@@ -29,6 +27,8 @@ header {
     list-style: none;
     margin: 2px;
     padding-right: 40px;
+    flex-wrap: wrap; /* Wrap items if necessary */
+    max-width: 100%;
 }
 .nav-links li {
     margin-right: 16px;
@@ -74,7 +74,7 @@ header {
 .menu-panel ul li a:hover {
     color: white;
 }
-    
+ 
 .burger-btn{
       height: 40px;
       width: 40px;
@@ -83,6 +83,8 @@ header {
       margin-right: 12px;
       cursor: pointer;
       display: none;
+      max-width: 40px;
+      overflow: hidden;
 }
 .close-btn {
     height: 40px;

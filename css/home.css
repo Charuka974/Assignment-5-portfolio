@@ -5,6 +5,7 @@
     padding: 2rem;
     background: 0;
     color: white; 
+    width: 100%;
 }
 
 .hero-content {
@@ -19,6 +20,7 @@
 .hero-text {
     text-align: left;
     position: relative;
+    margin-top: 50px;
     left: -100vw;
     animation: welcome 2s forwards ease-in-out;
     opacity: 0;

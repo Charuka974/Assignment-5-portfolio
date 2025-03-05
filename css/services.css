@@ -4,7 +4,9 @@
     justify-content: space-around;
 }
 
-
+#services{
+    width: 100%;
+}
 
 .service {
     background: #f4f4f4;
