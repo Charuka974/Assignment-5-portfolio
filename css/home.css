@@ -137,7 +137,10 @@
         height: 70vw;
         
     }
-    
+    .hero-details{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
