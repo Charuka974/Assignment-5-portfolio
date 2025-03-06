@@ -66,11 +66,14 @@ html, body {
     background: #333;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 6px white;
 }
 
 .btn:hover {
-    background: #555;
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px 6px green;
 }
 
 section {
