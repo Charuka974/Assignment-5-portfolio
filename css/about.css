@@ -6,6 +6,12 @@
 .about-info{
     margin: 40px;
 }
+.about-container{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px white;
+    background-color: #00000078;
+}
 h3{
     text-align: center;
 }
