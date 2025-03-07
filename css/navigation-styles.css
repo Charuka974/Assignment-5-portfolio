@@ -7,7 +7,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding: 2px;
     z-index: 1;
 
 }
@@ -26,8 +26,6 @@ header {
     display: flex;
     list-style: none;
     margin: 2px;
-    padding-right: 40px;
-    flex-wrap: wrap; /* Wrap items if necessary */
     max-width: 100%;
 }
 .nav-links li {
@@ -37,12 +35,12 @@ header {
     text-decoration: none;
     color: black;
     border-radius: 20px;
-    padding: 2px;
-    
+    padding: 10px 8px;
 }
 .nav-links li a:hover {
     color: white;
     background-color: rgb(0, 62, 5);
+    box-shadow: 3px 3px 6px green;
 }
 
 .menu-panel {
@@ -70,9 +68,11 @@ header {
     color: white;
     font-size: 1.2rem;
     border-radius: 20px;
+    padding: 10px 8px;
 }
 .menu-panel ul li a:hover {
     color: white;
+    box-shadow: 3px 3px 6px green;
 }
  
 .burger-btn{
