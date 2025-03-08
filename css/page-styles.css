@@ -84,7 +84,9 @@ section {
 h2 {
     margin-bottom: 1rem;
 }
-
+.section-header{
+    text-align: center;
+}
 
 
 .site-end-footer{
